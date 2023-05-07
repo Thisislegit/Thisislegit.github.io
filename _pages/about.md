@@ -14,5 +14,5 @@ Research Interests
 ======
 * Machine Learning for Query Optimization
   
-  I'm dedicated to integrating traditional rule-based query optimization techniques with machine learning technology to develop an efficient (outperforming traditional databases), autonomous (requiring no human maintenance), and practical (applicable to real products) database query optimizer. This approach and philosophy can be extended to various modules within the database to ultimately form a fully autonomous database management system.
+  I'm dedicated to integrating traditional rule-based query optimization techniques with machine learning technology to develop an **efficient** (outperforming traditional databases), **autonomous** (requiring no human maintenance), and **practical** (applicable to real products) database query optimizer. This approach and philosophy can be extended to various modules within the database to ultimately form a fully autonomous database management system.
 
