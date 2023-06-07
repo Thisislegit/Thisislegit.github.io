@@ -15,7 +15,7 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
-### <span style="color:#52ADC8">LEON: A New Framework for ML-Aided Query Optimization.</span>
+### <span style="color:#52ADC8">[LEON: A New Framework for ML-Aided Query Optimization.](https://www.vldb.org/pvldb/vol16/p2261-chen.pdf)</span>
 <b>Xu Chen</b>, Haitian Chen, Zibo Liang, Shuncheng Liu, Jinghong Wang, Kai Zeng, Han Su, Kai Zheng.\
 In *VLDB*, 2023.
 
