@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year graduate student in the School of [Computer Science and Engineering](https://en.uestc.edu.cn/info/1015/1407.htm) at University of Electronic Science and Technology of China, advised by Prof. [Kai Zheng](https://zheng-kai.com/) and [Han Su](https://ydri.uestc.edu.cn/info/1049/1041.htm). In 2020, I obtained my dual Bachelor’s degrees in Electrical and Electronics Engineering from University of Electronic Science and Technology of China and University of Glasgow (Graduated with First-class honor degree).
+I am a first-year Ph.D. student in the School of [Computer Science and Engineering](https://en.uestc.edu.cn/info/1015/1407.htm) at University of Electronic Science and Technology of China, advised by Prof. [Kai Zheng](https://zheng-kai.com/) and [Han Su](https://ydri.uestc.edu.cn/info/1049/1041.htm). In 2020, I obtained my dual Bachelor’s degrees in Electrical and Electronics Engineering from University of Electronic Science and Technology of China and University of Glasgow (Graduated with First-class honor degree).
 
 Research Interests
 ======
