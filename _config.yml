@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xu Chen"
 title_separator          : "-"
 name                     : &name "Xu Chen"
-description              : &description "Master student at University of Electronic Science and Technology of China"
+description              : &description "Ph.D. student at University of Electronic Science and Technology of China"
 url                      : https://Thisislegit.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Thisislegit.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Xu Chen"
   avatar           : "xuchen_profile.jpg"
-  bio              : "Master student at University of Electronic Science and Technology of China"
+  bio              : "Ph.D. student at University of Electronic Science and Technology of China"
   location         : "Chengdu, China"
   employer         :
   pubmed           : 
