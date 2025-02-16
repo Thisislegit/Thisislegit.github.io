@@ -16,7 +16,7 @@ author_profile: true
 {% endfor %} -->
 
 ### <span style="color:#52ADC8">[Optimizing Block Skipping for High-Dimensional Data with Learned Adaptive Curve.](https://dl.acm.org/doi/10.1145/3709710)</span>
-<b>Xu Chen</b>, Xu Chen, Shuncheng Liu, Tong Yuan, Tao Ye, Kai Zeng, Han Su, Kai Zheng.\
+<b>Xu Chen</b>, Shuncheng Liu, Tong Yuan, Tao Ye, Kai Zeng, Han Su, Kai Zheng.\
 In *SIGMOD*, 2025.
 
 ### <span style="color:#52ADC8">[LEON: A New Framework for ML-Aided Query Optimization.](https://www.vldb.org/pvldb/vol16/p2261-chen.pdf)</span>
