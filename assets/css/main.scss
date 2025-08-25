@@ -39,3 +39,52 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Custom styles for single page layout */
+.page__content {
+  section {
+    margin-bottom: 2rem;
+    
+    h1, h2, h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #f2f2f2;
+      padding-bottom: 0.5rem;
+    }
+  }
+  
+  /* Publications section styling */
+  h3 + p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Better spacing for publication entries */
+  h3:not(:first-of-type) {
+    margin-top: 1.5rem;
+  }
+  
+  /* Style publication titles */
+  strong a {
+    color: #52ADC8;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  /* Better line height for publication entries */
+  p {
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Research interests styling */
+  ul li {
+    margin-bottom: 1rem;
+    
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+}
