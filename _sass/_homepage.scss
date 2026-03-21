@@ -1,0 +1,224 @@
+#main.home-page {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  color: #1f1f1f;
+
+  .page,
+  .page__inner-wrap,
+  .page__content {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page__inner-wrap {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page__content {
+    margin-top: 0;
+  }
+
+  .home-content {
+    max-width: 48rem;
+    margin: 0;
+    padding: 3.25rem 1.5rem 4rem clamp(1.5rem, 4vw, 3.5rem);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+
+    > section + section {
+      border-top: 1px solid #e6e6e6;
+      margin-top: 2rem;
+      padding-top: 2rem;
+    }
+  }
+
+  .home-hero {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  .home-hero__avatar {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .home-hero__body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .home-hero__name,
+  .home-content h2,
+  .home-publications h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #111;
+  }
+
+  .home-hero__name {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.05;
+  }
+
+  .home-hero__tagline {
+    margin: 0.6rem 0 0;
+    max-width: 34rem;
+    color: #4a4a4a;
+    font-size: 1.02rem;
+  }
+
+  .home-hero__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.85rem;
+    margin: 0.85rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  .home-hero__links a,
+  .home-content a {
+    color: #1f1f1f;
+    text-decoration-color: #bcbcbc;
+    text-underline-offset: 0.14em;
+  }
+
+  .home-hero__links a:hover,
+  .home-content a:hover {
+    color: #000;
+    text-decoration-color: #777;
+  }
+
+  .home-content h2 {
+    margin: 0 0 0.9rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .home-publications h3 {
+    margin: 0 0 0.55rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #5f5f5f;
+  }
+
+  .home-content p,
+  .home-content ul,
+  .home-content li {
+    margin-top: 0;
+  }
+
+  .home-content p:last-child,
+  .home-content ul:last-child,
+  .publication:last-child {
+    margin-bottom: 0;
+  }
+
+  .home-research ul {
+    margin: 0.75rem 0 0;
+    padding-left: 1.15rem;
+  }
+
+  .home-research li + li {
+    margin-top: 0.6rem;
+  }
+
+  .publication-group + .publication-group {
+    margin-top: 1.6rem;
+  }
+
+  .home-publications .publication {
+    padding: 0.95rem 0 1rem;
+    border-top: 1px solid #ececec;
+  }
+
+  .publication__title,
+  .publication__authors,
+  .publication__venue {
+    margin: 0;
+  }
+
+  .publication__title {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 0.6rem;
+    align-items: start;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .publication__bullet {
+    color: #7a7a7a;
+  }
+
+  .publication__title-text {
+    min-width: 0;
+  }
+
+  .publication__title-text,
+  .publication__title-text a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  .publication__title-text a:hover {
+    text-decoration: underline;
+    text-decoration-color: #a8a8a8;
+  }
+
+  .publication__authors,
+  .publication__venue {
+    padding-left: 1.2rem;
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+
+  .publication__authors {
+    margin-top: 0.22rem;
+    color: #5d5d5d;
+  }
+
+  .publication__venue {
+    color: #6a6a6a;
+  }
+
+  @media (max-width: 680px) {
+    .home-content {
+      max-width: none;
+      padding: 2.25rem 1.25rem 3rem;
+    }
+
+    .home-hero {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .home-hero__avatar {
+      width: 4.75rem;
+      height: 4.75rem;
+    }
+
+    .home-hero__tagline {
+      font-size: 1rem;
+    }
+  }
+}
