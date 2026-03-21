@@ -2,7 +2,9 @@
 permalink: /
 title: "About Me"
 excerpt: "About me"
-author_profile: true
+layout: homepage
+author_profile: false
+hide_masthead: true
 redirect_from: 
   - /about/
   - /about.html
@@ -74,4 +76,3 @@ Zhi Xu, Shuncheng Liu, Ziniu Wu, <b>Xu Chen</b>, Kai Zeng, Kai Zheng, Han Su
 **SCSG Attention: A Self-centered Star Graph with Attention for Pedestrian Trajectory Prediction.**  
 <b>Xu Chen</b>, Shuncheng Liu, Zhi Xu, Yupeng Diao, Shaozhi Wu, Kai Zheng, Han Su  
 *DASFAA* 2021
-
