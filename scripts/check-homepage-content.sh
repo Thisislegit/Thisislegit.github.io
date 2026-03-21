@@ -48,9 +48,26 @@ if [ "$TITLE_COUNT" -ne 12 ]; then
   exit 1
 fi
 
-META_COUNT="$(rg -o 'class=\"publication__meta\"' "$HOME_HTML" | wc -l | tr -d ' ')"
-if [ "$META_COUNT" -ne 12 ]; then
-  echo "FAIL: expected 12 publication meta lines, found $META_COUNT"
+BULLET_COUNT="$(rg -o 'class=\"publication__bullet\"' "$HOME_HTML" | wc -l | tr -d ' ')"
+if [ "$BULLET_COUNT" -ne 12 ]; then
+  echo "FAIL: expected 12 publication bullet markers, found $BULLET_COUNT"
+  exit 1
+fi
+
+AUTHORS_COUNT="$(rg -o 'class=\"publication__authors\"' "$HOME_HTML" | wc -l | tr -d ' ')"
+if [ "$AUTHORS_COUNT" -ne 12 ]; then
+  echo "FAIL: expected 12 publication author lines, found $AUTHORS_COUNT"
+  exit 1
+fi
+
+VENUE_COUNT="$(rg -o 'class=\"publication__venue\"' "$HOME_HTML" | wc -l | tr -d ' ')"
+if [ "$VENUE_COUNT" -ne 12 ]; then
+  echo "FAIL: expected 12 publication venue lines, found $VENUE_COUNT"
+  exit 1
+fi
+
+if rg -q 'class=\"publication__meta\"' "$HOME_HTML"; then
+  echo "FAIL: old publication meta layout still present"
   exit 1
 fi
 
