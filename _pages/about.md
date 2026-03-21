@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <section class="home-hero">
-  <img class="home-hero__avatar" src="{{ '/images/xuchen_profile.jpg' | prepend: base_path }}" alt="Xu Chen">
+  <img class="home-hero__avatar" src="{{ '/images/xuchen_profile.jpg' | absolute_url }}" alt="Xu Chen">
   <div class="home-hero__body">
     <h1 class="home-hero__name">Xu Chen</h1>
     <p class="home-hero__tagline">Ph.D. student at UESTC working on machine learning for query optimization and autonomous database agents.</p>
