@@ -75,7 +75,7 @@ Content:
 
 - avatar
 - name: `Xu Chen`
-- one short descriptive sentence
+- one short descriptive sentence, newly written by tightening existing factual content from the current homepage rather than copied verbatim
 - one inline links row containing `Email`, `Google Scholar`, and `GitHub`
 
 Rules:
@@ -130,6 +130,7 @@ Structure:
 
 - section heading: `Publications`
 - keep light grouping by `Recent Work` and `Earlier Work`
+- preserve the current homepage grouping boundary: `Recent Work` contains 2023 and newer entries, and `Earlier Work` contains 2022 and older entries
 - within each group, list items in reverse chronological order
 
 Each publication entry should use a compact two-line rhythm:
