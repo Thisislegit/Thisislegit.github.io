@@ -18,6 +18,15 @@ rm -f "$BUILD_LOG"
 HOME_HTML="$BUILD_DIR/index.html"
 
 rg -q 'class="home-hero"' "$HOME_HTML" || { echo "FAIL: missing hero section"; exit 1; }
+rg -q 'class="home-hero__avatar"' "$HOME_HTML" || { echo "FAIL: missing homepage avatar"; exit 1; }
+if rg -q 'class="home-hero__avatar" src="/images/xuchen_profile.jpg"' "$HOME_HTML"; then
+  echo "FAIL: homepage avatar still renders a root-relative image path"
+  exit 1
+fi
+if ! rg -q 'class="home-hero__avatar" src="https?://[^"]*/images/xuchen_profile.jpg"' "$HOME_HTML"; then
+  echo "FAIL: homepage avatar is not rendered with an absolute deployment-aware URL"
+  exit 1
+fi
 rg -q 'class="home-bio"' "$HOME_HTML" || { echo "FAIL: missing bio section"; exit 1; }
 rg -q 'class="home-research"' "$HOME_HTML" || { echo "FAIL: missing research section"; exit 1; }
 rg -q 'class="home-publications"' "$HOME_HTML" || { echo "FAIL: missing publications section"; exit 1; }
