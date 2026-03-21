@@ -9,69 +9,88 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year Ph.D. student in the School of [Computer Science and Engineering](https://en.uestc.edu.cn/info/1015/1407.htm) at University of Electronic Science and Technology of China, advised by Prof. [Kai Zheng](https://zheng-kai.com/) and [Han Su](https://ydri.uestc.edu.cn/info/1049/1041.htm). In 2020, I obtained my dual Bachelor's degrees in Electrical and Electronics Engineering from University of Electronic Science and Technology of China and University of Glasgow (Graduated with First-class honor degree).
+<section class="home-hero">
+  <img class="home-hero__avatar" src="/images/xuchen_profile.jpg" alt="Xu Chen">
+  <div class="home-hero__body">
+    <h1 class="home-hero__name">Xu Chen</h1>
+    <p class="home-hero__tagline">Ph.D. student at UESTC working on machine learning for query optimization and autonomous database agents.</p>
+    <p class="home-hero__links">
+      <a href="mailto:XUCHEN.2019@outlook.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=i6heNjgAAAAJ&hl">Google Scholar</a>
+      <a href="https://github.com/Thisislegit">GitHub</a>
+    </p>
+  </div>
+</section>
 
-Research Interests
-======
-* Machine Learning for Query Optimization
-  
-  I'm dedicated to integrating traditional rule-based query optimization techniques with machine learning technology to develop an **efficient** (outperforming traditional databases), **autonomous** (requiring no human maintenance), and **practical** (applicable to real products) database query optimizer. This approach and philosophy can be extended to various modules within the database to ultimately form a fully autonomous database management system.
+<section class="home-bio">
+  <h2>About</h2>
+  <p>I am a third-year Ph.D. student in the School of <a href="https://en.uestc.edu.cn/info/1015/1407.htm">Computer Science and Engineering</a> at the University of Electronic Science and Technology of China, advised by Prof. <a href="https://zheng-kai.com/">Kai Zheng</a> and <a href="https://ydri.uestc.edu.cn/info/1049/1041.htm">Han Su</a>. My research connects machine learning, query optimization, and database agents, with a focus on building autonomous systems that are efficient, practical, and ready for real products.</p>
+</section>
 
-* LLM Agent & Database Agent
-  
-  I focus on using **Reinforcement Learning (RL)** to enhance LLM's agent capabilities in vertical domains through **test time scaling**. My work proposes DBAgent, an autonomous agent that emulates expert's iterative "Think-Act-Observe" cognitive workflow, integrating dynamic tool-use mechanisms, multi-modal perception, and RL-driven reasoning engines to achieve autonomous database operations and maintenance, representing a significant step towards collaborative and autonomous database administration.
+<section class="home-research">
+  <h2>Research Interests</h2>
+  <p>I study how learning-based methods can improve database optimization and make agentic systems more useful in vertical domains.</p>
+  <ul>
+    <li>Machine learning for query optimization: combining rule-based optimization with learned components to build efficient, autonomous, and practical database optimizers.</li>
+    <li>LLM and database agents: using reinforcement learning and test-time scaling to improve reasoning, tool use, and autonomous database operations.</li>
+  </ul>
+</section>
 
-Publications
-======
+<section class="home-publications">
+  <h2>Publications</h2>
+  <div class="publication-group">
+    <h3>Recent Work</h3>
+    <article class="publication">
+      <p class="publication__title"><a href="https://dl.acm.org/doi/10.1145/3709710">Optimizing Block Skipping for High-Dimensional Data with Learned Adaptive Curve.</a></p>
+      <p class="publication__meta"><strong>Xu Chen</strong>, Shuncheng Liu, Tong Yuan, Tao Ye, Kai Zeng, Han Su, Kai Zheng, <em>SIGMOD</em>, 2025.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title"><a href="https://ieeexplore.ieee.org/document/10598079">DACE: A Database-Agnostic Cost Estimator.</a></p>
+      <p class="publication__meta">Zibo Liang, <strong>Xu Chen</strong>, Yuyang Xia, Runfan Ye, Haitian Chen, Jiandong Xie, Kai Zheng, <em>ICDE</em>, 2024.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title"><a href="https://www.vldb.org/pvldb/vol16/p2261-chen.pdf">LEON: A New Framework for ML-Aided Query Optimization.</a></p>
+      <p class="publication__meta"><strong>Xu Chen</strong>, Haitian Chen, Zibo Liang, Shuncheng Liu, Jinghong Wang, Kai Zeng, Han Su, Kai Zheng, <em>VLDB</em>, 2023.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title"><a href="https://www.vldb.org/pvldb/vol16/p1958-chen.pdf">BASE: Bridging the Gap between Cost and Latency for Query Optimization.</a></p>
+      <p class="publication__meta"><strong>Xu Chen</strong>, Zhen Wang, Shuncheng Liu, Yaliang Li, Kai Zeng, Bolin Ding, Jingren Zhou, Han Su, Kai Zheng, <em>VLDB</em>, 2023.</p>
+    </article>
+  </div>
 
-### Recent Work
-
-**[Optimizing Block Skipping for High-Dimensional Data with Learned Adaptive Curve.](https://dl.acm.org/doi/10.1145/3709710)**  
-<b>Xu Chen</b>, Shuncheng Liu, Tong Yuan, Tao Ye, Kai Zeng, Han Su, Kai Zheng.  
-*SIGMOD*, 2025.
-
-**[DACE: A Database-Agnostic Cost Estimator.](https://ieeexplore.ieee.org/document/10598079)**  
-Zibo Liang, <b>Xu Chen</b>, Yuyang Xia, Runfan Ye, Haitian Chen, Jiandong Xie, Kai Zheng.  
-*ICDE*, 2024.
-
-**[LEON: A New Framework for ML-Aided Query Optimization.](https://www.vldb.org/pvldb/vol16/p2261-chen.pdf)**  
-<b>Xu Chen</b>, Haitian Chen, Zibo Liang, Shuncheng Liu, Jinghong Wang, Kai Zeng, Han Su, Kai Zheng.  
-*VLDB*, 2023.
-
-**[BASE: Bridging the Gap between Cost and Latency for Query Optimization.](https://www.vldb.org/pvldb/vol16/p1958-chen.pdf)**  
-<b>Xu Chen</b>, Zhen Wang, Shuncheng Liu, Yaliang Li, Kai Zeng, Bolin Ding, Jingren Zhou, Han Su, Kai Zheng.  
-*VLDB*, 2023.
-
-### Earlier Work
-
-**Efficient Learning with Pseudo Labels for Query Cost Estimation.**  
-Shuncheng Liu, <b>Xu Chen</b>, Yan Zhao, Jin Chen, Rui Zhou, Kai Zheng  
-*CIKM* 2022
-
-**HeGA: Heterogeneous Graph Aggregation Network for Trajectory Prediction in High-Density Traffic.**  
-Shuncheng Liu, <b>Xu Chen</b>, Ziniu Wu, Liwei Deng, Han Su, Kai Zheng  
-*CIKM* 2022
-
-**RISE: A Velocity Control Framework with Minimal Impacts based on Reinforcement Learning.**  
-Yuyang Xia, Shuncheng Liu, <b>Xu Chen</b>, Zhi Xu, Kai Zheng, Han Su  
-*CIKM* 2022
-
-**Astral: An Autoencoder-Based Model for Pedestrian Trajectory Prediction of Variable-Length.**  
-Yupeng Diao, Yiteng Su, Ximu Zeng, <b>Xu Chen</b>, Shuncheng Liu, Han Su  
-*DASFAA (Workshops)* 2022
-
-**TSummary: A Traffic Summarization System Using Semantic Words.**  
-<b>Xu Chen</b>, Ximu Zeng, Shuncheng Liu, Zhi Xu, Yuyang Xia, Ruyi Lai, Han Su  
-*DASFAA (Workshops)* 2022
-
-**Efficient Join Order Selection Learning with Graph-based Representation.**  
-Jin Chen, Guanyu Ye, Yan Zhao, Shuncheng Liu, Liwei Deng, <b>Xu Chen</b>, Rui Zhou, Kai Zheng  
-*KDD* 2022
-
-**PATROL: A Velocity Control Framework for Autonomous Vehicle via Spatial-Temporal Reinforcement Learning.**  
-Zhi Xu, Shuncheng Liu, Ziniu Wu, <b>Xu Chen</b>, Kai Zeng, Kai Zheng, Han Su  
-*CIKM* 2021
-
-**SCSG Attention: A Self-centered Star Graph with Attention for Pedestrian Trajectory Prediction.**  
-<b>Xu Chen</b>, Shuncheng Liu, Zhi Xu, Yupeng Diao, Shaozhi Wu, Kai Zheng, Han Su  
-*DASFAA* 2021
+  <div class="publication-group">
+    <h3>Earlier Work</h3>
+    <article class="publication">
+      <p class="publication__title">Efficient Learning with Pseudo Labels for Query Cost Estimation.</p>
+      <p class="publication__meta">Shuncheng Liu, <strong>Xu Chen</strong>, Yan Zhao, Jin Chen, Rui Zhou, Kai Zheng, <em>CIKM</em>, 2022.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">HeGA: Heterogeneous Graph Aggregation Network for Trajectory Prediction in High-Density Traffic.</p>
+      <p class="publication__meta">Shuncheng Liu, <strong>Xu Chen</strong>, Ziniu Wu, Liwei Deng, Han Su, Kai Zheng, <em>CIKM</em>, 2022.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">RISE: A Velocity Control Framework with Minimal Impacts based on Reinforcement Learning.</p>
+      <p class="publication__meta">Yuyang Xia, Shuncheng Liu, <strong>Xu Chen</strong>, Zhi Xu, Kai Zheng, Han Su, <em>CIKM</em>, 2022.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">Astral: An Autoencoder-Based Model for Pedestrian Trajectory Prediction of Variable-Length.</p>
+      <p class="publication__meta">Yupeng Diao, Yiteng Su, Ximu Zeng, <strong>Xu Chen</strong>, Shuncheng Liu, Han Su, <em>DASFAA (Workshops)</em>, 2022.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">TSummary: A Traffic Summarization System Using Semantic Words.</p>
+      <p class="publication__meta"><strong>Xu Chen</strong>, Ximu Zeng, Shuncheng Liu, Zhi Xu, Yuyang Xia, Ruyi Lai, Han Su, <em>DASFAA (Workshops)</em>, 2022.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">Efficient Join Order Selection Learning with Graph-based Representation.</p>
+      <p class="publication__meta">Jin Chen, Guanyu Ye, Yan Zhao, Shuncheng Liu, Liwei Deng, <strong>Xu Chen</strong>, Rui Zhou, Kai Zheng, <em>KDD</em>, 2022.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">PATROL: A Velocity Control Framework for Autonomous Vehicle via Spatial-Temporal Reinforcement Learning.</p>
+      <p class="publication__meta">Zhi Xu, Shuncheng Liu, Ziniu Wu, <strong>Xu Chen</strong>, Kai Zeng, Kai Zheng, Han Su, <em>CIKM</em>, 2021.</p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">SCSG Attention: A Self-centered Star Graph with Attention for Pedestrian Trajectory Prediction.</p>
+      <p class="publication__meta"><strong>Xu Chen</strong>, Shuncheng Liu, Zhi Xu, Yupeng Diao, Shaozhi Wu, Kai Zheng, Han Su, <em>DASFAA</em>, 2021.</p>
+    </article>
+  </div>
+</section>
