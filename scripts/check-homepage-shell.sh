@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-bundle exec jekyll build >/tmp/homepage-shell-check.log
+BUILD_DIR="$(mktemp -d -t homepage-shell-check.XXXXXX)"
+BUILD_LOG="$(mktemp -t homepage-shell-check.XXXXXX)"
+cleanup() {
+  rm -rf "$BUILD_DIR"
+}
+trap cleanup EXIT
 
-HOME_HTML="_site/index.html"
-PUBS_HTML="_site/publications/index.html"
+if ! bundle exec jekyll build --destination "$BUILD_DIR" >"$BUILD_LOG" 2>&1; then
+  echo "FAIL: jekyll build failed; inspect $BUILD_LOG"
+  exit 1
+fi
+
+rm -f "$BUILD_LOG"
+
+HOME_HTML="$BUILD_DIR/index.html"
+PUBS_HTML="$BUILD_DIR/publications/index.html"
 
 has_class() {
   grep -Eq '<[^>]+class="[^"]*'"$1"'[^"]*"' "$2"

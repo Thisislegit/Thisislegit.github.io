@@ -1,13 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BUILD_LOG="$(mktemp -t homepage-content-check)"
-if ! bundle exec jekyll build >"$BUILD_LOG" 2>&1; then
+BUILD_DIR="$(mktemp -d -t homepage-content-check.XXXXXX)"
+BUILD_LOG="$(mktemp -t homepage-content-check.XXXXXX)"
+cleanup() {
+  rm -rf "$BUILD_DIR"
+}
+trap cleanup EXIT
+
+if ! bundle exec jekyll build --destination "$BUILD_DIR" >"$BUILD_LOG" 2>&1; then
   echo "FAIL: jekyll build failed; inspect $BUILD_LOG"
   exit 1
 fi
 
-HOME_HTML="_site/index.html"
+rm -f "$BUILD_LOG"
+
+HOME_HTML="$BUILD_DIR/index.html"
 
 rg -q 'class="home-hero"' "$HOME_HTML" || { echo "FAIL: missing hero section"; exit 1; }
 rg -q 'class="home-bio"' "$HOME_HTML" || { echo "FAIL: missing bio section"; exit 1; }
