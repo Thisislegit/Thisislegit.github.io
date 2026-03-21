@@ -23,7 +23,6 @@ redirect_from:
 </section>
 
 <section class="home-bio">
-  <h2>About</h2>
   <p>I am a third-year Ph.D. student in the School of <a href="https://en.uestc.edu.cn/info/1015/1407.htm">Computer Science and Engineering</a> at the University of Electronic Science and Technology of China, advised by Prof. <a href="https://zheng-kai.com/">Kai Zheng</a> and <a href="https://ydri.uestc.edu.cn/info/1049/1041.htm">Han Su</a>. My research connects machine learning, query optimization, and database agents, with a focus on building autonomous systems that are efficient, practical, and ready for real products.</p>
 </section>
 
