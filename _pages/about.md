@@ -4,7 +4,6 @@ title: "About Me"
 excerpt: "About me"
 layout: homepage
 author_profile: false
-hide_masthead: true
 redirect_from: 
   - /about/
   - /about.html
