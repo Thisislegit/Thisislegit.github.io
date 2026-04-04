@@ -42,6 +42,14 @@ redirect_from:
     <article class="publication">
       <p class="publication__title">
         <span class="publication__bullet" aria-hidden="true">•</span>
+        <span class="publication__title-text"><a href="https://rdcu.be/fbDAN">LEON+: Towards Robust ML-aided Query Optimization.</a></span>
+      </p>
+      <p class="publication__authors"><strong>Xu Chen*</strong>, Ximu Zeng*, Yuze Wang, Zibo Liang, Kai Zeng, Han Su, Kai Zheng</p>
+      <p class="publication__venue"><em>VLDB Journal</em>, accepted in March 2026. <small>* means equal contribution.</small></p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">
+        <span class="publication__bullet" aria-hidden="true">•</span>
         <span class="publication__title-text"><a href="https://dl.acm.org/doi/10.1145/3709710">Optimizing Block Skipping for High-Dimensional Data with Learned Adaptive Curve.</a></span>
       </p>
       <p class="publication__authors"><strong>Xu Chen</strong>, Shuncheng Liu, Tong Yuan, Tao Ye, Kai Zeng, Han Su, Kai Zheng</p>
