@@ -42,6 +42,14 @@ redirect_from:
     <article class="publication">
       <p class="publication__title">
         <span class="publication__bullet" aria-hidden="true">•</span>
+        <span class="publication__title-text">DBAgent: An RL-Based Agent for Autonomous Database Operations and Maintenance.</span>
+      </p>
+      <p class="publication__authors"><strong>Xu Chen*</strong>, Junmin Chen*, Shuncheng Liu, Yuyang Xia, Zibo Liang, Xiaoming Qin, Kai Zeng, Han Su, Kai Zheng</p>
+      <p class="publication__venue"><em>VLDB</em>, 2026. <small>* means equal contribution.</small></p>
+    </article>
+    <article class="publication">
+      <p class="publication__title">
+        <span class="publication__bullet" aria-hidden="true">•</span>
         <span class="publication__title-text"><a href="https://rdcu.be/fbDAN">LEON+: Towards Robust ML-aided Query Optimization.</a></span>
       </p>
       <p class="publication__authors"><strong>Xu Chen*</strong>, Ximu Zeng*, Yuze Wang, Zibo Liang, Kai Zeng, Han Su, Kai Zheng</p>

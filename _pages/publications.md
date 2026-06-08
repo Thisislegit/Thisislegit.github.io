@@ -15,6 +15,11 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
+### <span style="color:#52ADC8">DBAgent: An RL-Based Agent for Autonomous Database Operations and Maintenance.</span>
+<b>Xu Chen</b><sup>&#42;</sup>, Junmin Chen<sup>&#42;</sup>, Shuncheng Liu, Yuyang Xia, Zibo Liang, Xiaoming Qin, Kai Zeng, Han Su, Kai Zheng.<br />
+<small><sup>&#42;</sup>Equal contribution.</small><br />
+In <em>VLDB</em>, 2026.
+
 ### <span style="color:#52ADC8">[Optimizing Block Skipping for High-Dimensional Data with Learned Adaptive Curve.](https://dl.acm.org/doi/10.1145/3709710)</span>
 <b>Xu Chen</b>, Shuncheng Liu, Tong Yuan, Tao Ye, Kai Zeng, Han Su, Kai Zheng.\
 In *SIGMOD*, 2025.
