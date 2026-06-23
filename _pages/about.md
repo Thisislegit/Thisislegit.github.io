@@ -4,9 +4,6 @@ title: "About Me"
 excerpt: "About me"
 layout: homepage
 author_profile: false
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 <section class="home-hero">
