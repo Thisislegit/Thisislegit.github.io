@@ -1,7 +1,8 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About me"
+title: "Xu Chen"
+seo_title: "Xu Chen | Learning-based Autonomous Systems"
+description: "Xu Chen researches learning-based autonomous systems, spanning learned query optimization, transferable data and system representations, and self-learning agents."
 layout: homepage
 author_profile: false
 ---
@@ -10,32 +11,63 @@ author_profile: false
   <img class="home-hero__avatar" src="{{ '/images/xuchen_profile.jpg' | absolute_url }}" alt="Xu Chen">
   <div class="home-hero__body">
     <h1 class="home-hero__name">Xu Chen</h1>
-    <p class="home-hero__tagline">Ph.D. student at UESTC working on machine learning for query optimization and autonomous database agents.</p>
+    <p class="home-hero__tagline">Ph.D. student at UESTC working on learning-based autonomous systems.</p>
     <p class="home-hero__links">
       <a href="mailto:XUCHEN.2019@outlook.com">Email</a>
       <a href="https://scholar.google.com/citations?user=i6heNjgAAAAJ&hl">Google Scholar</a>
+      <a href="https://dblp.org/pid/83/6331-23.html">DBLP</a>
       <a href="https://github.com/Thisislegit">GitHub</a>
     </p>
   </div>
 </section>
 
-<section class="home-bio">
-  <p>I am a third-year Ph.D. student in the School of <a href="https://en.uestc.edu.cn/info/1015/1407.htm">Computer Science and Engineering</a> at the University of Electronic Science and Technology of China, advised by Prof. <a href="https://zheng-kai.com/">Kai Zheng</a> and <a href="https://ydri.uestc.edu.cn/info/1049/1041.htm">Han Su</a>. My research connects machine learning, query optimization, and database agents, with a focus on building autonomous systems that are efficient, practical, and ready for real products.</p>
+<section class="home-research">
+  <h2>Research</h2>
+  <p>I am a Ph.D. student at UESTC, advised by Prof. <a href="https://zheng-kai.com/">Kai Zheng</a>. Prof. <a href="https://ydri.uestc.edu.cn/info/1049/1041.htm">Han Su</a> was my master's advisor.</p>
+  <p>I study how AI systems acquire reusable knowledge from data and interaction, make reliable decisions under real-world constraints, and continually improve after deployment. Databases are my primary testbed. My research has progressed from learning individual system decisions to learning transferable system knowledge and, finally, to building agents that act on and continually update that knowledge.</p>
+  <p class="home-credibility">My work has appeared at VLDB, SIGMOD, and ICDE, and in The VLDB Journal. DBAgent has been validated in production at Huawei Cloud DWS, and I have also worked with ByteDance AI Infra and Alibaba DAMO Academy.</p>
 </section>
 
-<section class="home-research">
-  <h2>Research Interests</h2>
-  <p>I study how learning-based methods can improve database optimization and make agentic systems more useful in vertical domains.</p>
-  <ul>
-    <li>Machine learning for query optimization: combining rule-based optimization with learned components to build efficient, autonomous, and practical database optimizers.</li>
-    <li>LLM and database agents: using reinforcement learning and test-time scaling to improve reasoning, tool use, and autonomous database operations.</li>
-  </ul>
+<section class="home-themes">
+  <h2>Research Themes</h2>
+  <article class="home-theme">
+    <h3>Learning to optimize systems.</h3>
+    <p>I develop learning-based methods for query optimization, cost and cardinality estimation, data layout, and resource management while preserving the structure and reliability of mature system components.</p>
+  </article>
+  <article class="home-theme">
+    <h3>Learning transferable representations.</h3>
+    <p>I study reusable representations of data distributions, workloads, and system states that can transfer across databases and reduce the need for retraining.</p>
+  </article>
+  <article class="home-theme">
+    <h3>Learning to act and improve.</h3>
+    <p>I study tool-using agents that learn from interaction trajectories, domain knowledge, and system feedback, with a focus on agentic reinforcement learning and continual self-improvement.</p>
+  </article>
+</section>
+
+<section class="home-work">
+  <h2>Selected Work</h2>
+  <article class="work-item">
+    <h3>DBAgent — Closed-loop autonomous database operations.</h3>
+    <p>DBAgent is an RL-based, tool-using agent for multi-step database diagnosis and optimization, closing the loop between system signals, actions, and feedback. It has been validated in production at Huawei Cloud DWS.</p>
+  </article>
+  <article class="work-item">
+    <h3>LEON / LEON+ — Learning inside a mature optimizer.</h3>
+    <p>LEON and LEON+ embed learning into a mature optimizer's search process to improve plan selection while preserving the optimizer's established structure.</p>
+    <p class="work-item__links"><a href="https://www.vldb.org/pvldb/vol16/p2261-chen.pdf">LEON</a> · <a href="https://rdcu.be/fbDAN">LEON+</a></p>
+  </article>
+  <article class="work-item">
+    <h3>DACE / General Cardinality Estimation — Transferable system knowledge.</h3>
+    <p>DACE learns database-agnostic cost representations. My ongoing cardinality-estimation research extends this direction by exploring reusable distribution representations across databases.</p>
+    <p class="work-item__links"><a href="https://ieeexplore.ieee.org/document/10598079">DACE</a></p>
+  </article>
+  <article class="work-item">
+    <h3>Self-learning Agents — Learning from interaction.</h3>
+    <p>My ongoing research studies how self-learning agents extract reusable domain knowledge and implicit world models from interaction transitions and self-exploration. At ByteDance AI Infra, I worked on rollout infrastructure for multi-tool agentic reinforcement learning.</p>
+  </article>
 </section>
 
 <section class="home-publications">
-  <h2>Publications</h2>
-  <div class="publication-group">
-    <h3>Recent Work</h3>
+  <h2>Selected Publications</h2>
     <article class="publication">
       <p class="publication__title">
         <span class="publication__bullet" aria-hidden="true">•</span>
@@ -84,73 +116,5 @@ author_profile: false
       <p class="publication__authors"><strong>Xu Chen</strong>, Zhen Wang, Shuncheng Liu, Yaliang Li, Kai Zeng, Bolin Ding, Jingren Zhou, Han Su, Kai Zheng</p>
       <p class="publication__venue"><em>VLDB</em>, 2023.</p>
     </article>
-  </div>
-
-  <div class="publication-group">
-    <h3>Earlier Work</h3>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">Efficient Learning with Pseudo Labels for Query Cost Estimation.</span>
-      </p>
-      <p class="publication__authors">Shuncheng Liu, <strong>Xu Chen</strong>, Yan Zhao, Jin Chen, Rui Zhou, Kai Zheng</p>
-      <p class="publication__venue"><em>CIKM</em>, 2022.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">HeGA: Heterogeneous Graph Aggregation Network for Trajectory Prediction in High-Density Traffic.</span>
-      </p>
-      <p class="publication__authors">Shuncheng Liu, <strong>Xu Chen</strong>, Ziniu Wu, Liwei Deng, Han Su, Kai Zheng</p>
-      <p class="publication__venue"><em>CIKM</em>, 2022.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">RISE: A Velocity Control Framework with Minimal Impacts based on Reinforcement Learning.</span>
-      </p>
-      <p class="publication__authors">Yuyang Xia, Shuncheng Liu, <strong>Xu Chen</strong>, Zhi Xu, Kai Zheng, Han Su</p>
-      <p class="publication__venue"><em>CIKM</em>, 2022.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">Astral: An Autoencoder-Based Model for Pedestrian Trajectory Prediction of Variable-Length.</span>
-      </p>
-      <p class="publication__authors">Yupeng Diao, Yiteng Su, Ximu Zeng, <strong>Xu Chen</strong>, Shuncheng Liu, Han Su</p>
-      <p class="publication__venue"><em>DASFAA (Workshops)</em>, 2022.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">TSummary: A Traffic Summarization System Using Semantic Words.</span>
-      </p>
-      <p class="publication__authors"><strong>Xu Chen</strong>, Ximu Zeng, Shuncheng Liu, Zhi Xu, Yuyang Xia, Ruyi Lai, Han Su</p>
-      <p class="publication__venue"><em>DASFAA (Workshops)</em>, 2022.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">Efficient Join Order Selection Learning with Graph-based Representation.</span>
-      </p>
-      <p class="publication__authors">Jin Chen, Guanyu Ye, Yan Zhao, Shuncheng Liu, Liwei Deng, <strong>Xu Chen</strong>, Rui Zhou, Kai Zheng</p>
-      <p class="publication__venue"><em>KDD</em>, 2022.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">PATROL: A Velocity Control Framework for Autonomous Vehicle via Spatial-Temporal Reinforcement Learning.</span>
-      </p>
-      <p class="publication__authors">Zhi Xu, Shuncheng Liu, Ziniu Wu, <strong>Xu Chen</strong>, Kai Zeng, Kai Zheng, Han Su</p>
-      <p class="publication__venue"><em>CIKM</em>, 2021.</p>
-    </article>
-    <article class="publication">
-      <p class="publication__title">
-        <span class="publication__bullet" aria-hidden="true">•</span>
-        <span class="publication__title-text">SCSG Attention: A Self-centered Star Graph with Attention for Pedestrian Trajectory Prediction.</span>
-      </p>
-      <p class="publication__authors"><strong>Xu Chen</strong>, Shuncheng Liu, Zhi Xu, Yupeng Diao, Shaozhi Wu, Kai Zheng, Han Su</p>
-      <p class="publication__venue"><em>DASFAA</em>, 2021.</p>
-    </article>
-  </div>
+  <p class="home-publications__more">Full publication list: <a href="https://scholar.google.com/citations?user=i6heNjgAAAAJ&hl">Google Scholar</a> · <a href="https://dblp.org/pid/83/6331-23.html">DBLP</a></p>
 </section>
